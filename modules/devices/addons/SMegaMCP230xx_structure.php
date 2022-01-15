@@ -15,6 +15,8 @@ $this->device_types['megadmcp230xx'] = array(
             'PortSDA'=>array('DESCRIPTION'=>'Порт Меги SDA','_CONFIG_TYPE'=>'num','_CONFIG_HELP'=>'SdDimmerMinMax'),
             'PortINT'=>array('DESCRIPTION'=>'Порт Меги INT','_CONFIG_TYPE'=>'num','_CONFIG_HELP'=>'SdDimmerMinMax'),
             'Ext'=>array('DESCRIPTION'=>'Канал MCP230xx','_CONFIG_TYPE'=>'select','_CONFIG_OPTIONS'=>'0=0 Канал,1=1 Канал,2=2 Канал,3=3 Канал,4=4 Канал,5=5 Канал,6=6 Канал,7=7 Канал,8=8 Канал,9=9 Канал,10=10 Канал,11=11 Канал,12=12 Канал,13=13 Канал,14=14 Канал,15=15 Канал,16=16 Канал'),
+            'icon'=>array('DESCRIPTION'=>LANG_IMAGE,'_CONFIG_TYPE'=>'style_image','_CONFIG_HELP'=>'SdIcon'),
+            'symbol'=>array('DESCRIPTION'=>'Символы SVG','_CONFIG_TYPE'=>'select','_CONFIG_OPTIONS'=>'=Без символа,#sEconomMode=EconomMode,#pie=pie,3=3 Канал,4=4 Канал,5=5 Канал,6=6 Канал,7=7 Канал,8=8 Канал,9=9 Канал,10=10 Канал,11=11 Канал,12=12 Канал,13=13 Канал,14=14 Канал,15=15 Канал,16=16 Канал'),
             'value'=>array('DESCRIPTION'=>'Data Value','ONCHANGE'=>'valueUpdated','DATA_KEY'=>1),
             'stored_value'=>array('DESCRIPTION'=>'Month Value'),
             'counter'=>array('DESCRIPTION'=>'Счетчик'),
