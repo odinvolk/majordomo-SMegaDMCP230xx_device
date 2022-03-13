@@ -1,5 +1,60 @@
-    <div class="device-header">%.value% %.object_description% %.counter%</div>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="toggle_oneStep%.object_id%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"  width="358" height="358"version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="LGToggleOrange">
+   <stop id="stop908" stop-color="#ffd300" offset="0"/>
+   <stop id="stop906" stop-color="#f27b0f" offset="1"/>
+  </linearGradient>
+  <linearGradient id="LGToggleGrey">
+   <stop id="stop23456" stop-color="#f9f9f9" offset="0"/>
+   <stop id="stop23458" stop-color="#5f5c5d" offset="1"/>
+  </linearGradient>
+  <linearGradient id="LGToggleGreen">
+   <stop id="stop11822" stop-color="#a9ff00" offset="0"/>
+   <stop id="stop11824" stop-color="#005600" offset="1"/>
+  </linearGradient>
+  <linearGradient id="LGToggleRed">
+   <stop id="stop862" stop-color="#ff9488" offset="0"/>
+   <stop id="stop864" stop-color="#f10303" offset="1"/>
+  </linearGradient>
+   <symbol id="sEconomMode" viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet">
+        <path id="b" d="m10.3 22.3c-0.632-2.04-0.435-5.5 0.355-6.89 6.53-9.32 13.9-7.31 21.3-7.18 0.622 5.11-5.59 25.6-19 17.6-1.22 1.01-1.55 2.83-1.51 4.99-1.54 1.83-2.7 1.44-3.45-1.51-0.0596-2.35 0.94-4.69 2.3-7.04z" fill='%.value|"url(#LGToggleGrey);url(#LGToggleGreen);"%' fill-opacity=".4" stroke="#000" stroke-width="0"/>
+   </symbol>
+   <symbol id="pie" viewBox="0 0 52 52" preserveAspectRatio="xMidYMid meet">
+    <title>Pie chart</title>
+     <desc>Draw a Pie chart by using the path</desc>
+        <path fill="#00BCD4" d="M24,30c-3.3,0-6-2.7-6-6s2.7-6,6-6V5C13.5,5,5,13.5,5,24s8.5,19,19,19c4.4,0,8.5-1.5,11.8-4.1l-8-10.2 C26.7,29.5,25.4,30,24,30z"/>
+        <path fill="#448AFF" d="M30,24h13c0-10.5-8.5-19-19-19v13C27.3,18,30,20.7,30,24z"/>
+        <path fill="#3F51B5" d="M43,24H30c0,1.9-0.9,3.6-2.3,4.7l8,10.2C40.2,35.4,43,30,43,24z"/>
+  </symbol>
+ </defs>
+ <rect width="148" height="148" rx="74" ry="74" stroke="#ccc" y="1" x="1" stroke="#000" stroke-opacity=".4" fill='%.value|"#ccc;red;"%' fill-opacity=".6"/>
+ <rect width="140" height="140" y="5" x="5" rx="70" ry="73" fill='%.value|"url(#LGToggleGrey);url(#LGToggleRed);"%' fill-opacity=".8" stroke='%.value|"#ccc;red;"%' stroke-width=".1" stroke-opacity=".8">
+  <animate attributeType="XML" attributeName="stroke-width" values="0.5;0.7;1;1.5;2;2.5;3;" dur='%.value|"0;1;"%s' repeatCount="indefinite"/>
+ </rect>
+<!-- <use xlink:href="symbol-sbor.svg#internet-speed" x="5" y="5" width="150" height="150"/> -->
+ <use xlink:href="%.symbol%" x="5" y="5" width="150" height="150"/>
+ <image xlink:href="%.icon%" x="25" y="25" width="100" height="100"/>
+ <ellipse rx="68" ry="68" cy="75" cx="75" stroke="#ссс" stroke-width="2" stroke-opacity=".4" fill="#f0f0f0" fill-opacity=".6">
+  <title>%.value% %.object_description% %.counter%</title>
+  <animate attributeType="XML" attributeName="fill-opacity" values="0.2;0.4;0.6;0.8;1;" dur='%.value|"0;1;"%s' repeatCount="indefinite"/>
+ </ellipse>
+</svg>
+
+<!--
+<div class="device-widget controller loadtype_%.loadType%"
+     onClick='$(".icon%.object_id%_light").addClass("pressed");
+     setTimeout("$(\".icon%.object_id%_light\").removeClass(\"pressed\");",300);
+     callMethod("%.object_title%.switch");
+     $.get("<#ROOTHTML#>ajax/devices.html?op=clicked&object="+encodeURIComponent("%.object_title%"));'>
+<div class="device-icon %.status|"off;on"% icon%.object_id%_light" id="icon%.object_id%_light" style='%.icon|"background-image:url(%.icon%)"%'></div>
+<div class="device-header">%.object_description%</div>
+</div>
+
+
+<div class="device-header">%.value% %.object_description% %.counter%</div>
 <svg id="%.object_title%%.object_id%%.linkedRoom%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" height="50" width="50" version="1.1">
  <rect rx="1.5" ry="1.5" height="100%" width="100%" y="0" x="0" fill="#14303b" fill-opacity=".8" stroke='%.alive|"red;#ab773b;"%' stroke-width='%.alive|"2;0.1"%' stroke-opacity=".1"/>
  <circle id="icon%.object_id%_light" cx="2" cy="50%" r="1" fill='%.status|"grey;#da7823;"%' fill-opacity="1" stroke="#da7823" stroke-width=".1"/>
-</svg>
+</svg>  onclick="callMethod('EconomMode.switch');" xlink:href="https://i.stack.imgur.com/N1DGN.png" xlink:href="./cms/scenes/styles/warning/i_fire.svg"-->
